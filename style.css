@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f2;
+    color: #333;
+}
+
+header {
+    background: #176b2c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.logo {
+    font-size: 45px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 5px;
+}
+
+header h2 {
+    font-size: 24px;
+    margin: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+nav {
+    background: #0c4d20;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #f0b429;
+    color: black;
+}
+
+.welcome {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.welcome h2 {
+    color: #176b2c;
+    margin-bottom: 18px;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.home-cards {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    flex: 1 1 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #176b2c;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    background: #f0b429;
+    color: #222;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: #176b2c;
+    color: white;
+}
+
+footer {
+    background: #0c4d20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+        nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+nav a {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+    }
+
+    nav a {
+        flex-shrink: 0;
+    }
+
+    .welcome {
+        margin: 20px 15px;
+        padding: 25px
+      }
+
+.welcome p {
+    font-size: 16px;
+}
+
+.home-cards {
+    padding: 15px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #176b2c, #2e8b45);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    background: #f0b429;
+    color: #222;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-buttons a:hover {
+    background: white;
+    color: #176b2c;
+}
+.card {
+    transition: 0.3s;
+    border-top: 4px solid #176b2c;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.card h3 {
+    font-size: 23px;
+}
+
+.card a {
+    transition: 0.3s;
+}
+.rate-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.rate-table table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+}
+
+.rate-table th,
+.rate-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.rate-table th {
+    background: #176b2c;
+    color: white;
+}
